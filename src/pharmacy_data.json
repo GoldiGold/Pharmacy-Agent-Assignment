@@ -1,0 +1,70 @@
+{
+	"description lines": ["This database contains information about medications and users in a pharmacy system.",
+     "Each medication has details such as active ingredients, dosage instructions, prescription requirements, stock quantity, and price.",
+     "Users have unique IDs, names, and lists of active prescriptions."],
+     
+	"medications": [
+	{
+        "id": "med_001",
+        "name": "Acamol",
+	    "active_ingredients": ["Paracetamol"],
+	    "description": "Pain reliever and fever reducer.",
+	    "dosage_instructions": "Adults: 1-2 tablets every 4-6 hours. Do not exceed 8 tablets in 24 hours.",
+	    "requires_prescription": false,
+	    "stock_quantity": 150,
+	    "price": 15.00
+	},
+	{
+	    "id": "med_002",
+	    "name": "Moxypen",
+	    "active_ingredients": ["Amoxicillin"],
+	    "description": "Antibiotic used to treat bacterial infections.",
+	    "dosage_instructions": "500mg every 8 hours. Complete the full course as prescribed.",
+	    "requires_prescription": true,
+	    "stock_quantity": 45,
+	    "price": 32.50
+	},
+	{
+	    "id": "med_003",
+	    "name": "Nurofen",
+	    "active_ingredients": ["Ibuprofen"],
+	    "description": "Non-steroidal anti-inflammatory drug (NSAID).",
+	    "dosage_instructions": "Take with food. 200mg-400mg every 4-6 hours.",
+	    "requires_prescription": false,
+	    "stock_quantity": 0,
+	    "price": 22.00
+	},
+	{
+	    "id": "med_004",
+	    "name": "Lipitor",
+	    "active_ingredients": ["Atorvastatin"],
+	    "description": "Statin medication used to lower cholesterol.",
+	    "dosage_instructions": "Take orally once daily at the same time each day.",
+	    "requires_prescription": true,
+	    "stock_quantity": 20,
+	    "price": 85.00
+	},
+	{
+	    "id": "med_005",
+	    "name": "Ventolin Inhaler",
+	    "active_ingredients": ["Salbutamol"],
+	    "description": "Bronchodilator for asthma relief.",
+	    "dosage_instructions": "1-2 puffs as needed for shortness of breath.",
+	    "requires_prescription": true,
+	    "stock_quantity": 12,
+	    "price": 40.00
+	}
+    ],
+    "users": [
+	{ "id": "user_101", "name": "David Cohen", "active_prescriptions": ["med_002", "med_005"] },
+	{ "id": "user_102", "name": "Sarah Levy", "active_prescriptions": ["med_004"] },
+	{ "id": "user_103", "name": "Moshe Mizrahi", "active_prescriptions": [] },
+	{ "id": "user_104", "name": "Rachel Green", "active_prescriptions": ["med_002"] },
+	{ "id": "user_105", "name": "Yossi Avraham", "active_prescriptions": [] },
+	{ "id": "user_106", "name": "Dana Klein", "active_prescriptions": ["med_005"] },
+	{ "id": "user_107", "name": "Noa Shapira", "active_prescriptions": ["med_004", "med_002"] },
+	{ "id": "user_108", "name": "Guy Rotem", "active_prescriptions": [] },
+	{ "id": "user_109", "name": "Maya Golan", "active_prescriptions": [] },
+	{ "id": "user_110", "name": "Omer Friedman", "active_prescriptions": ["med_005"] }
+    ]
+}
