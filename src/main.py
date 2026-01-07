@@ -31,8 +31,7 @@ if user_prompt := st.chat_input("How can I help you today?"):
         st.markdown(user_prompt)
     
     # Add to history
-    # IMPORTANT: We inject the current USER ID into the context 
-    # so the agent knows who it is talking to for prescription checks.
+    # We inject the current USER ID into the context so the agent knows who it is talking to.
     # This is how we make the stateless agent context-aware.
     context_prompt = f"[User ID: {user_id}] {user_prompt}"
     st.session_state.messages.append({"role": "user", "content": context_prompt})
