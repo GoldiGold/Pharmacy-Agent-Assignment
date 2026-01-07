@@ -121,7 +121,7 @@ We can evaluate our agent with multiple metrics.
 	__goal:__ 0%
 3. **Using the correct tools**
 
-	__Description:__ Precentage of times the Agent used the correct tool, this is a little tricky metric since the agent can sometimes use different tools to answer some questions (ususally about medicines that aren't in the database, sometimes it will used different tools in order to find information about a medicine)
+	__Description:__ Precentage of times the Agent used the correct tool, this is a little tricky metric since the agent can sometimes use different tools to answer some questions (ususally about medicines that aren't in the database, sometimes it will use different tools in order to find information about a medicine)
 	
 	Example: If a user asks about an active prescription for a medicine that doesn't exist, the agent might use both validate_prescription and get_medication_details in order to answer and tell either they don't have a prescription or the medicine doesn't exist.
 	
