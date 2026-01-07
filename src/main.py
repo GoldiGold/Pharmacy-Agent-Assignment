@@ -6,7 +6,7 @@ from src.ui_utils import render_sidebar_header, render_chat_history, display_deb
 st.set_page_config(page_title="Agent Engineer Pharmacy", page_icon="💊", layout="wide")
 
 # 2. Sidebar & User Setup
-user_id = render_sidebar_header() # GOLDI: renders the sidebar and returns the current user_id
+user_id = render_sidebar_header() # Also gets the user ID from sidebar input
 st.sidebar.subheader("🛠️ Agent Internals (Debug)")
 debug_container = st.sidebar.container() # Tool calls will appear here
 
