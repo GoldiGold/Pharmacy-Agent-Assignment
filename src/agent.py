@@ -86,7 +86,7 @@ def _process_stream_chunks(stream):
                 if index not in tool_calls_accumulator:
                     tool_calls_accumulator[index] = {
                         "id": tool_call.id,
-                        "type": "function",  # Fix for the API requirement
+                        "type": "function",
                         "function": {"name": "", "arguments": ""}
                     }
                 # If we already have initialized a tool_call in the accumelator at this index

@@ -94,7 +94,6 @@ def get_active_prescriptions(user_id: str, data=None):
             prescription_details.append({
                 "medication": medicine["name"],
                 "id": medicine["id"],
-                # "dosage": medicine["dosage_instructions"] #TODO: DECIDE IF WE WANT TO ADD DOSAGE INFO HERE
             })
                 
     return {
