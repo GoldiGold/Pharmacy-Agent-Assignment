@@ -22,7 +22,7 @@ To run the agent you need an **OpenAI API Key** written in **.env** file AND **D
 
 1. Clone the repo:
 ``` bash
-git clone <repo_url>
+git clone https://github.com/GoldiGold/Pharmacy-Agent-Assignment.git
 cd PharmacyAgentAssignment
 ```
 
